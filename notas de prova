@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int nota;
+
+    printf("Digite qual foi a nota do aluno de 0 a 100: ");
+    scanf("%d", &nota);
+    printf("\n");
+
+    if (nota >= 86 && nota<= 100){
+        printf("Voce tirou A");
+    }
+    else if(nota >= 61 && nota <= 85){
+        printf("Voce tirou B");
+    }
+    else if (nota >= 36 && nota <= 60){
+        printf("Voce tirou C");
+    }
+    else if (nota >= 1 && nota <= 35){
+        printf("Voce tirou D");
+    }
+    else if (nota == 0){
+        printf("Voce tirou E");
+    }
+    else {
+        printf("Valor invalido!");
+    }
+
+    return 0;
+}
