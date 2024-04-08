@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1;
+    int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7, resultado8, resultado9, resultado10;
+
+    printf("Digite o numero da tabuada desejada, de 1 a 10: ");
+    scanf("%d", &num1);
+    printf("\n");
+
+    if (num1 >=1 && num1 <=10){
+        resultado1 = num1 * 1;
+        resultado2 = num1 * 2;
+        resultado3 = num1 * 3;
+        resultado4 = num1 * 4;
+        resultado5 = num1 * 5;
+        resultado6 = num1 * 6;
+        resultado7 = num1 * 7;
+        resultado8 = num1 * 8;
+        resultado9 = num1 * 9;
+        resultado10 = num1 * 10;
+        printf("%d X 1 = %d\n", num1, resultado1);
+        printf("%d X 2 = %d\n", num1, resultado2);
+        printf("%d X 3 = %d\n", num1, resultado3);
+        printf("%d X 4 = %d\n", num1, resultado4);
+        printf("%d X 5 = %d\n", num1, resultado5);
+        printf("%d X 6 = %d\n", num1, resultado6);
+        printf("%d X 7 = %d\n", num1, resultado7);
+        printf("%d X 8 = %d\n", num1, resultado8);
+        printf("%d X 9 = %d\n", num1, resultado9);
+        printf("%d X 10 = %d\n", num1, resultado10);
+    }
+    else {
+        printf("Numero da tabuada invalida!");
+    }
+
+    return 0;
+}
