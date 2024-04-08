@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int num1, num2;
+
+    printf("VALIDAÇÃO DO NUMERO MAIOR\n");
+    printf("\n");
+
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &num1);
+    printf("\n");
+    
+    printf("Digite o segundo numero: ");
+    scanf("%d", &num2);
+    printf("\n");
+
+    if(num1 > num2){
+        printf("%d é o maior", num1);
+    }
+    else if(num2 > num1) {
+        printf("%d é o maior", num2);
+    }
+    else {
+        printf("%d e %d são iguais", num1, num2);
+    }
+
+}
