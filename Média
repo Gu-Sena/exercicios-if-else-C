@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{
+    float nota1, nota2, media;
+    
+    printf("Digite a primeira nota do aluno: ");
+    scanf("%f", &nota1);
+    printf("\n");
+   
+    printf("Digite a segunda nota do aluno: ");
+    scanf("%f", &nota2);
+    printf("\n");
+    
+    if (nota1 >= 0 && nota1 <= 10 && nota2 >= 0 && nota2 <=10) {
+        media = (nota1 + nota2) / 2;
+    }
+    else {
+        printf("NOTA INVÁLIDA! TENTE NOVAMENTE!");
+        printf("\n");
+        
+        printf("Digite a primeira nota do aluno: ");
+        scanf("%f", &nota1);
+        printf("\n");
+        
+        printf("Digite a segunda nota do aluno: ");
+        scanf("%f", &nota2);
+        printf("\n");
+    }
+  
+    if (media >= 6) {
+        printf("A NOTA DO ALUNO FOI: %.1f\n", media);
+        printf("APROVADO");
+    }
+    else if (media >= 4 && media <=5) {
+        printf("A NOTA DO ALUNO FOI: %.1f\n", media);
+        printf("VOCÊ ESTÁ DE RECUPERAÇÃO");
+    }
+    else {
+        printf("A NOTA DO ALUNO FOI: %.1f\n", media);
+        printf("REPROVADO");
+    }
+    
+    return 0;
+}
