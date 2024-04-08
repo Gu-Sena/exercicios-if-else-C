@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main()
+{
+    int codigo, quantidade;
+    float valor;
+
+    printf("SEJA BEM VINDO A NOSSA LANCHONETE\nAQUI ESTA NOSSO CARDAPIO:\n");
+    printf("\n");
+
+    printf("Cachorro quente - Codigo: 100 - Preco: R$ 1.20\n");
+    printf("Bauro simples - Codigo: 101 - Preco: R$ 1.30\n");
+    printf("Bauro com ovo - Codigo: 102 - Preco: R$ 1.50\n");
+    printf("Hamburguer - Codigo: 103 - Preco: R$ 1.20\n");
+    printf("Cheeseburguer - Codigo: 104 - Preco: R$ 1.70\n");
+    printf("Suco - Codigo: 105 - Preco: R$ 2.20\n");
+    printf("Refrigerante - Codigo: 106 - Preco: R$ 1.00\n");
+    printf("\n");
+
+    printf("Digite o codigo do produto desejado: ");
+    scanf("%d", &codigo);
+    printf("\n");
+    
+    printf("Digite a quantidade desejada: ");
+    scanf("%d", &quantidade);
+    printf("\n");
+
+    if (codigo == 100){
+        valor = quantidade * 1.20;
+        printf("O total dos itens selecionados foram  R$ %.2f", valor);    
+    }
+    else if (codigo == 101){
+        valor = quantidade * 1.30;
+        printf("O total dos itens selecionados foram R$ %.2f", valor); 
+    }
+    else if (codigo == 102){
+        valor = quantidade * 1.50;
+        printf("O total dos itens selecionados foram R$ %.2f", valor); 
+    }
+    else if (codigo == 103){
+        valor = quantidade * 1.20;
+        printf("O total dos itens selecionados foram R$ %.2f", valor); 
+    }
+    else if(codigo == 104){
+        valor = quantidade * 1.70;
+        printf("O total dos itens selecionados foram R$ %.2f", valor); 
+    }
+    else if(codigo == 105){
+        valor = quantidade * 2.20;
+        printf("O total dos itens selecionados foram R$ %.2f", valor); 
+    }
+    else {
+        valor = quantidade * 1.00;
+        printf("O total dos itens selecionados foram R$ %.2f", valor);
+    }
+
+    return 0;
+}
